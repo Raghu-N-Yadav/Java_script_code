@@ -47,7 +47,7 @@ swapNumber(2,3);
 // third way of using afunction
 //checking a number is even or odd
 const oddEven = number => {
-    rem = number / 2;
+    let rem = number / 2;
     if (rem === 0){
         console.log('Number is Even');
     } else {
