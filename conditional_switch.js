@@ -1,5 +1,5 @@
 //using random number genrator to play with switch
-let myNumber = Math.floor(Math.random()* 5);
+let myNumber = Math.floor(Math.random()* 5); // gives a number b/w 0 and 5
 
 switch (myNumber) {
     case 1:
