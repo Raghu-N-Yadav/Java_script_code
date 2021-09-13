@@ -30,3 +30,30 @@ function calculator(x, y){
 
 calculator(5,6);
 calculator(9,8);
+//second way of using a function 
+//swap two numbers
+const swapNumber = function(x, y) {
+    console.log(`Swaping numbers ${x} & ${y}`);
+    var temp = 0;
+    temp = x;
+    x = y;
+    y = temp;
+    console.log(`after swaping number result is ::`, x ,y)
+};
+
+//console.log('swaping');
+swapNumber(2,3);
+
+// third way of using afunction
+//checking a number is even or odd
+const oddEven = number => {
+    rem = number / 2;
+    if (rem === 0){
+        console.log('Number is Even');
+    } else {
+        console.log('Number is Odd');
+    }
+
+}
+console.log('checking for number 23');
+oddEven(23);
