@@ -1,6 +1,6 @@
-//using abulit in object .. like math
+//using a bulit in object .. like math
 
-console.log(Math.random()); // random number b/w 0 nad 1
+console.log(Math.random()); // give random number b/w 0 nad 1
 var number = Math.random() * 50; // random number b/w 0 and 50 and store in number
 console.log(number);
 console.log(Math.floor(number)); //  gives nearest floor value 
