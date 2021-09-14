@@ -1,5 +1,5 @@
 //using function to do some mathmatical operations
-//simple function
+//simple function 
 function simpleFunction(){
     console.log('It\'s a simple function');
 }
