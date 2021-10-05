@@ -1,0 +1,75 @@
+javaScript ------
+
+*Object.freeze  -- use it when you dont want someone to change your object
+
+**************Arrow function 
+
+eg1 --- 
+const sum = (...args) => args.reduce((a,b) => a+b ,0);
+	...args will let you take any number of arguments
+
+eg2 - 
+const hi = (name = 'Any') => 'hello' + name;
+
+**finding max -- using spread
+eg1 -
+const arr  = [1,2,3,4,5]
+const mx  = Math.Max(...arr) //output = 5
+
+
+**************Regular Expression
+
+format - /condition/   (using i after / can ignore uppercase or lowercase) eg- /string/i
+
+*** /regex/.test('string'); /// just to check 
+
+eg1:-- 
+let petString = 'I am a boy';
+let petRegex = /I|boy/
+let result = petRegex.test(petstring) // test will return true or false
+
+*** 'string'.match(/regex/); // to extract a specific string
+if value is repeating more than once use -->  /string/g
+
+***********wildCArd Period
+/./ - use it to match anything 
+eg --> /hu./ ,will match hum hun hut humor etc
+eg --> /.hu/ ,  will match tun , bun , fun , sun etc  
+
+**to define a group of characters you wish to match by placing them inside square ([ and ]) brackets.
+eg --> /[aeiou]/  ,, will match all vowels
+eg -- > /[^aeiou]/  ,,,, will neglete all vowels
+
+eg **--> /^ball/  ..,, will check for ball at the beganing
+eg**--> /ball$/  	.. will check for ball at the ending 
+
+eg -->  /[0-9]/  .., will check for range from 0  to 9 
+
+##	/[A-Za-z0-9_]/ is equal as /\w/  and the negation is /\W/ 
+##	/[0-9/  is equal to /\d/ and negation is /\D/
+##	/\s/	check for whitespaces and negation is /\S/ i.e will not check for whitespaces
+
+**Greedy match =>  /Aa*/ or /a[a-z]*i/  --- give longest substring
+** Lazy Match =>  /a[a-z]*?b/ --  give shortest substring
+*************************************************************************************************8
+
+***Array
+Arr = []
+arr.push() - add at end
+arr.unshift() - add at the beganing
+arr.pop() -- delete from last
+arr.shift() - delete from beganing
+
+arr.splice(startIndex, no of items) 
+arr.splice(startIndex, number of items, value to add)
+
+arr.slice(startingIndex, stopIndex)  	/// will not include stoping index
+
+arr.indexOf(ele) -- will return index .. if not present resturn -1
+
+***********Objects
+adding ,accessing --- object.key or object[key]
+deleting ---   delete object.key
+checking for property --->  object.hasOwnProperty(key)  or 'key in object' 
+
+Object.keys(ObjectName) --> will return array of all properties
