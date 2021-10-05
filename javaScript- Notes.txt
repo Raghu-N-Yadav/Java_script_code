@@ -73,3 +73,7 @@ deleting ---   delete object.key
 checking for property --->  object.hasOwnProperty(key)  or 'key in object' 
 
 Object.keys(ObjectName) --> will return array of all properties
+
+******************************************************
+###joining list to string
+ str = mylist.join('')
